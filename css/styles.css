@@ -105,7 +105,22 @@ img{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.header-menu-item::after{
+.header-menu-item-one {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #404BBF;
+    padding: 24px 0;
+    display: block;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+
+
+
+.header-menu-item-one:after{
     content: '';
     width: 100%;
     position: absolute;
