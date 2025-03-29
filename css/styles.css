@@ -42,6 +42,11 @@ img{
     align-items: center;}
 
 .logo-all {
+    position: relative;
+}
+.logo-all::after{
+    content: '';
+    position: absolute;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -74,8 +79,7 @@ img{
     display: block;
     padding: 24px 0;
     transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
     
 }
 .logo-address:hover {
@@ -104,6 +108,7 @@ img{
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .header-menu-item:hover {
     color: #404BBF;
@@ -304,12 +309,10 @@ gap: 24px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
             background;
     background-color: #4d5ae5;
-    border-radius: 32px;
+    border-radius: 50%;
     padding: center;
     transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }   
 .type-icon:hover, .type-icon:focus {
     background-color: #404bbf;
@@ -344,6 +347,8 @@ gap: 24px;
     flex: calc((100% - 48px)/3);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;  
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .border-foto:hover .portfolio-text-image{
@@ -368,7 +373,7 @@ gap: 24px;
     padding: 40px 32px;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 250ms ease;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-poziom-one{
     border: 1px solid #e7e9fc;
@@ -407,6 +412,7 @@ gap: 24px;
 
 .footer{
 margin: start;
+margin-right: 120px;
 }
 
 
@@ -426,6 +432,7 @@ margin: start;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 .social-footer{
     width: 208px;
@@ -435,7 +442,6 @@ margin: start;
 }
 
 .social-list-footer{
-    margin-top: 16px;
     display: flex;
     gap: 16px;
 }
@@ -449,6 +455,9 @@ margin: start;
 .studio-logo-two{
     color:#f4f4fd
 }
+.type-icon-footer-list{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .type-icon-footer {
     border: none;
@@ -461,11 +470,10 @@ margin: start;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background;
     background-color: #4d5ae5;
-    border-radius: 32px;
+    border-radius: 50%;
     padding: center;
     transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
