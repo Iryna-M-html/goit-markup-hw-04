@@ -109,7 +109,7 @@ img{
 }
 
 
-.header-menu-item .current::after{
+.header-menu-item.current::after{
     content: '';
     width: 100%;
     position: absolute;
