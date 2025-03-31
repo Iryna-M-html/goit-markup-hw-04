@@ -42,6 +42,8 @@ img{
     align-items: center;}
 
 .logo-all {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -279,8 +281,6 @@ gap: 24px;
 }
 
 .team-names-persone{
-    background-color: #ffffff;
-    border: none;
     padding: 32px 0px;
 }
 
@@ -448,7 +448,6 @@ margin-right: 120px;
 .social-footer{
     width: 208px;
     height: 80px;
-    margin-left: 120px;
     
 }
 
